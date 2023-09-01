@@ -6,13 +6,13 @@ def readData():
         line = datafile.readline()
 
         # Remove the newline character and split the line into a list of column headers.
-        encabezado = line.rstrip('\n').split(',')
+        header = line.rstrip('\n').split(',')
 
         # Create an empty list to store the data rows.
-        matriz = []
+        array = []
 
         # Create a list of 32 empty strings to store branch names based on branch IDs.
-        sucursales = [' '] * 32
+        branches = [' '] * 32
 
         # Read the next line from the CSV file.
         linea = datafile.readline()
@@ -22,14 +22,14 @@ def readData():
 
             fila = linea.rstrip('\n').split(',')
 
-            sucursales[int(fila[5])-1] = fila[3] + " " + fila[4]
+            branches[int(fila[5])-1] = fila[3] + " " + fila[4]
 
-            matriz.append(fila)
+            array.append(fila)
 
             linea = datafile.readline()
-    # Return the processed data: matriz (list of data rows), sucursales (list of branch names),
-    # and encabezado (list of column headers).
-    return matriz, sucursales, encabezado
+    # Return the processed data: array (list of data rows), branches (list of branch names),
+    # and header (list of column headers).
+    return array, branches, header
 
 def main():
     patients, city_name, columns = readData()
@@ -39,6 +39,7 @@ def main():
     i_ps = columns.index('systolic_pressure')
     i_pd = columns.index('diastolic_pressure')
     i_mq = columns.index('medicine_quantity')
+
     men = 0
     women = 0
     len_pacientes = len(patients)
@@ -64,13 +65,11 @@ def main():
                 delivery = True
             else:
                 delivery= False
-
             if delivery:
                 if patients[i][i_gender]=="m":
                     men += 1
                 else :
                     women += 1
-
                 cant_med += int(patients[i][i_mq])
 
     print(f"{main_input} {city_name[main_input-1]}")
