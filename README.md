@@ -15,13 +15,13 @@
 
   <img alt="Repository size" src="https://img.shields.io/github/repo-size/forgionyc/medication-delivery-scheduling-system?color=56BEB8">
 
-  <img alt="License" src="https://img.shields.io/github/license/forgionyc/medication-delivery-scheduling-system?color=56BEB8">
+  <!--<img alt="License" src="https://img.shields.io/github/license/forgionyc/medication-delivery-scheduling-system?color=56BEB8"> -->
 
-  <!-- <img alt="Github issues" src="https://img.shields.io/github/issues/{{YOUR_GITHUB_USERNAME}}/medication-delivery-scheduling-system?color=56BEB8" /> -->
+  <!-- <img alt="Github issues" src="https://img.shields.io/github/issues/forgionyc/medication-delivery-scheduling-system?color=56BEB8" /> -->
 
-  <!-- <img alt="Github forks" src="https://img.shields.io/github/forks/{{YOUR_GITHUB_USERNAME}}/medication-delivery-scheduling-system?color=56BEB8" /> -->
+  <!-- <img alt="Github forks" src="https://img.shields.io/github/forks/forgionyc/medication-delivery-scheduling-system?color=56BEB8" /> -->
 
-  <!-- <img alt="Github stars" src="https://img.shields.io/github/stars/{{YOUR_GITHUB_USERNAME}}/medication-delivery-scheduling-system?color=56BEB8" /> -->
+  <!-- <img alt="Github stars" src="https://img.shields.io/github/stars/forgionyc/medication-delivery-scheduling-system?color=56BEB8" /> -->
 </p>
 
 <!-- Status -->
@@ -38,7 +38,7 @@
   <a href="#rocket-technologies">Technologies</a> &#xa0; | &#xa0;
   <a href="#white_check_mark-requirements">Requirements</a> &#xa0; | &#xa0;
   <a href="#checkered_flag-starting">Starting</a> &#xa0; | &#xa0;
-  <!-- <a href="#memo-license">License</a> &#xa0; | &#xa0; -->
+  <a href="#memo">Memo</a> &#xa0; | &#xa0;
   <a href="https://github.com/forgionyc" target="_blank">Author</a>
 </p>
 
@@ -57,24 +57,24 @@ The following tools were used in this project:
 
 ## :white_check_mark: Requirements
 
-Before starting :checkered_flag:, you need to have [Git](https://git-scm.com) and [Python 3](https://www.python.org/downloads/) installed.
+Before starting :checkered_flag:, you need to have [Git](https://git-scm.com) and [Python](https://www.python.org/downloads/) installed.
 
 ## :checkered_flag: Starting
 
 ```bash
 # Clone this project
-$ git clone https://github.com/{{forgionyc}}/medication-delivery-scheduling-system
+$ git clone https://github.com/forgionyc/medication-delivery-scheduling-system
 
 # Access
 $ cd medication-delivery-scheduling-system
 
 # Run the project
-$ /bin/python3 medication-delivery-scheduling-system.py
+$ yarn
 
-# Input the id branch (from 1-32) to find out all the related info to that branch.
+# Test the project choosing a branch in the range of 1-32
 $ 1
 
-#Results
+# Ouput should be
 1 Leticia Amazonas
 scheduled patients
 male 1089
@@ -83,10 +83,12 @@ total 2179
 scheduled medicine quantity
 mean 150.45
 total 327837
+```
+
+## :memo:
 
 Made with :heart: by <a href="https://github.com/forgionyc" target="_blank">Carlos Forgiony</a>
 
 &#xa0;
 
 <a href="#top">Back to top</a>
-```
