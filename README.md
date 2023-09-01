@@ -69,7 +69,7 @@ $ git clone https://github.com/forgionyc/medication-delivery-scheduling-system
 $ cd medication-delivery-scheduling-system
 
 # Run the project
-$ yarn
+$ /bin/python3 medication-delivery-scheduling-system.py
 
 # Test the project choosing a branch in the range of 1-32
 $ 1
